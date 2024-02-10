@@ -1,0 +1,10 @@
+[
+    {
+        "question" : "Il primo cavo transatlantico telefonico",
+        "correct" : ["fu realizzato verso la meta' del XX secolo, dopo l'invenzione del transistor e l'avvento dell'elettronica allo stato solido"],
+        "wrong" : [	"Non so", 
+            "fu realizzato nei primi anni del XX secolo, in seguito al successo delle prime applicazioni del servizio telefonico",
+	        "fu realizzato verso le fine del XIX secolo, insieme al primo cavo transatlantico telegrafico"
+        ]
+    }
+]
