@@ -7,17 +7,10 @@ import java.util.Set;
  * A simple implementation of the {@link Question} interface.
  * This class represents a basic question with a single correct answer and multiple wrong answers.
  */
-public class SimpleQuestion implements Question {
+public class SimpleQuestion extends AbstractQuestion {
 
-    /** The text of the question. */
-    private final String question;
-    
-    /** The correct answer to the question. */
     private final String answer;
     
-    /** Set of wrong answers for the question. */
-    private final Set<String> wrongAnswers;
-
     /**
      * Constructs a SimpleQuestion object with the given question and answer.
      *
@@ -26,12 +19,12 @@ public class SimpleQuestion implements Question {
      * @throws IllegalArgumentException if question or answer is null or empty
      */
     public SimpleQuestion(final String question, final String answer) {
-        if (question == null || question.isEmpty() || answer == null || answer.isEmpty()) {
-            throw new IllegalArgumentException("Question or Answer cannot be null or empty");
+        super(question);
+        if (answer == null || answer.isEmpty()) {
+            throw new IllegalArgumentException("Answer cannot be null or empty in a SimpleQuestion");
         }
-        this.question = question;
         this.answer = answer;
-        this.wrongAnswers = new HashSet<>();
+        super.correctAnswers.add(answer);
     }
 
     /**

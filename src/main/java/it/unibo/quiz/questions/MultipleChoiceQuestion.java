@@ -10,11 +10,7 @@ import java.util.stream.Stream;
  * The {@code MultipleChoiceQuestion} class represents a multiple-choice question in a quiz.
  * It implements the {@code Question} interface.
  */
-public class MultipleChoiceQuestion implements Question {
-
-    private final String question;
-    private final Set<String> wrongAnswers;
-    private final Set<String> correctAnswers;
+public class MultipleChoiceQuestion extends AbstractQuestion {
 
     /**
      * Constructs a new multiple-choice question with the specified question text.
@@ -23,13 +19,7 @@ public class MultipleChoiceQuestion implements Question {
      * @throws IllegalArgumentException if the provided question text is null or empty
      */
     public MultipleChoiceQuestion(final String question) {
-        if (question == null || question.isEmpty()) {
-            throw new IllegalArgumentException("Question cannot be null or empty");
-        }
-
-        this.question = question;
-        this.correctAnswers = new HashSet<>();
-        this.wrongAnswers = new HashSet<>();
+        super(question);
     }
 
     /**
