@@ -1,10 +1,998 @@
 [
-    {
-        "question" : "Il primo cavo transatlantico telefonico",
-        "correct" : ["fu realizzato verso la meta' del XX secolo, dopo l'invenzione del transistor e l'avvento dell'elettronica allo stato solido"],
-        "wrong" : [	"Non so", 
-            "fu realizzato nei primi anni del XX secolo, in seguito al successo delle prime applicazioni del servizio telefonico",
-	        "fu realizzato verso le fine del XIX secolo, insieme al primo cavo transatlantico telegrafico"
-        ]
-    }
+  {
+    "question": "Il primo cavo transatlantico telefonico",
+    "correct": [
+      "fu realizzato verso la meta' del XX secolo, dopo l'invenzione del transistor e l'avvento dell'elettronica allo stato solido"
+    ],
+    "wrong": [
+      "Non so",
+      "fu realizzato nei primi anni del XX secolo, in seguito al successo delle prime applicazioni del servizio telefonico",
+      "fu realizzato verso le fine del XIX secolo, insieme al primo cavo transatlantico telegrafico"
+    ]
+  },
+  {
+    "question": "Un servizio di tipo broadcast",
+    "correct": [
+      "puo' essere realizzato con qualunque tipologia di canale, anche se risulta piu' efficiente utilizzare un canale broadcast",
+      "se realizzato utilizzando un canale di tipo broadcast che \"copre\" una certa area geografica, permette la fruizione del servizio in mobilità nell'area"
+    ],
+    "wrong": [
+      "v viene preferibilmente realizzato utilizzando canali punto-punto",
+      "deve necessariamente essere realizzato con un canale punto-multipunto"
+    ]
+  },
+  {
+    "question": "Le reti di telecomunicazioni geografiche hanno tipicamente una struttura",
+    "correct": [
+      "di tipo gerarchico in cui si puo' riconoscere una rete di accesso tipicamente a stella ed una di transito con interconnessioni a maglia"
+    ],
+    "wrong": [
+      "Non so",
+      "a stella con un solo centro stella per semplificare la gestione",
+      "a maglia completa per rendere massima l'affidabilita'"
+    ]
+  },
+  {
+    "question": "Secondo il modello OSI le PCI",
+    "correct": [
+      "vengono aggiunte da tutti gli strati ai dati loro consegnati dagli strati immediatamente superiori"
+    ],
+    "wrong": [
+      "vengono aggiunte da tutti gli strati ai dati loro consegnati dagli strati immediatamente inferiori",
+      "Non so",
+      "vengono aggiunte solamente dallo strato di applicazione ai dati di utente"
+    ]
+  },
+  {
+    "question": "Le prime reti di calcolatori sviluppate negli anni '70",
+    "correct": [
+      "Erano reti proprietarie chiuse sorte per lo piu' iniziative dei grandi costruttori di calcolatori"
+    ],
+    "wrong": [
+      "Erano regolate da standard sviluppati in ambito ITU",
+      "Non facevano uso di architetture a strati",
+      "Utilizzavano gli stessi protocolli dell'attuale rete Internet"
+    ]
+  },
+  {
+    "question": "Le linee bifilari intrecciate o doppini",
+    "correct": [
+      "Migliorano la loro qualità quando sono intrecciate con molta cura, diminuendo gli accoppiamenti elettromagnetici mutui",
+      "Sono classificati in categorie in base alla qualità della loro realizzazione, secondo precisi standard internazionali.",
+      "Sono particolarmente economiche e semplici da installare",
+      "Nel corso del XX secolo sono state usate per realizzare la rete di accesso telefonica"
+    ],
+    "wrong": []
+  },
+  {
+    "question": "Le linee bifilari in rame di tipo UTP categoria 5",
+    "correct": [
+      "sono utilizzate per la realizzazione di cablaggi strutturati negli edifici"
+    ],
+    "wrong": [
+      "sono tipicamente utilizzate per la rete di accesso telefonica analogica",
+      "sono tipicamente utilizzate per la rete di trasporto",
+      "Non so"
+    ]
+  },
+  {
+    "question": "Per garantire una qualita' di servizio accettabile per servizi di comunicazione vocale fra umani una rete deve",
+    "correct": ["privilegiare la garanzia di una buona trasparenza temporale"],
+    "wrong": [
+      "annullare il ritardo di propagazione",
+      "essere assolutamente ideale per quanto riguarda trasparenza semantica e temporale",
+      "Non so"
+    ]
+  },
+  {
+    "question": "I cavi coassiali",
+    "correct": [
+      "Sono composti da due conduttori concentrici separati da un materiale isolante (ad esempio plastica)",
+      "Sono mezzi trasmissivi con ottima immunità ai disturbi elettromagnetici, migliore rispetto ai doppini (Twisted Pairs)"
+    ],
+    "wrong": [
+      "Sono stati progressivamente soppiantati dalle fibre ottiche.",
+      "Hanno in generale un costo per chilometro minore rispetto alle fibre ottiche"
+    ]
+  },
+  {
+    "question": "I sistemi cellulari",
+    "correct": [
+      "Sono stati introdotti per consentire servizi conversazionali mediante un numero limitato di canali radio riutilizzati piu' volte in aree diverse"
+    ],
+    "wrong": [
+      "Sono stati introdotti per fornire accessi a Internet tramite la rete telefonica",
+      "Non so",
+      "Sono stati introdotti per effettuare trasmissioni dati via radio a grandi distanze"
+    ]
+  },
+  {
+    "question": "Fra i mezzi trasmissivi usati nelle le reti in area locale (LAN) ci sono",
+    "correct": [
+      "Fibre ottiche",
+      "Coppie bifilari avvitate (Twisted Pairs)",
+      "Canale radio"
+    ],
+    "wrong": []
+  },
+  {
+    "question": "Servizi quali la posta elettronica, whatts, telegram ecc. secondo la tassonomia dei servizi ITU sono classificabili come:",
+    "correct": [
+      "interattivi con scambio dell'informazione in tempo differito con memorizzazione"
+    ],
+    "wrong": [
+      "distributivi con controllo di presentazione",
+      "Non so",
+      "interattivi con scambio dell'informazione in tempo reale"
+    ]
+  },
+  {
+    "question": "Secondo il modello ISO OSI un protocollo di livello N",
+    "correct": ["stabilisce le regole di dialogo fra due entita' di livello N"],
+    "wrong": [
+      "stabilisce le regole di dialogo tra le entita' di livello N e quelle di livello N-1",
+      "non e' necessario che sia standardizzato in quanto strettamente dipendente dall'implementazione"
+    ]
+  },
+  {
+    "question": "Per realizzare collegamenti su lunghe distanze e' preferibile:",
+    "correct": [
+      "utilizzare le fibre ottiche in virtù della loro bassa attenuazione"
+    ],
+    "wrong": [
+      "cavi coassiali in virtu' della loro immunita' ai disturbi elettromagnetici",
+      "utilizzare cavi UTP in virtu' del loro basso costo"
+    ]
+  },
+  {
+    "question": "Quando si dice \"paradosso delle fibre ottiche\" si intende che",
+    "correct": [
+      "le fibre ottiche rappresentano uno dei pochi esempi di tecnologie per cui ad un forte incremento di prestazioni rispetto alle tecnologie concorrenti, corrisponde una sostanziale diminuzione di costo"
+    ],
+    "wrong": [
+      "è un paradosso che le fibre ottiche non siano state immediatamente dispiegate nella rete di accesso in considerazione del basso costo e della semplicità dei relativi connettori",
+      "le fibre ottiche permettono velocità di trasmissione paradossali"
+    ]
+  },
+  {
+    "question": "Le dimensioni di una LAN sono tipicamente",
+    "correct": ["dell'ordine delle centinaia di metri"],
+    "wrong": ["dell'ordine del metro", "dell'ordine dei chilometri"]
+  },
+  {
+    "question": "In un LAN implementata secondo le moderne tecnologie di cablaggio qual è il ruolo dei patch cord",
+    "correct": [
+      "collegare i punti di arrivo delle prese a muro nei patch panel con le corrette porte degli apparati attivi presenti nell'armadio di rete"
+    ],
+    "wrong": [
+      "collegare le prese a muro con l'armadio di rete",
+      "collegare tra loro gli apparati attivi in diversi armadi realizzando il cablaggio verticale"
+    ]
+  },
+  {
+    "question": "Il messaggio DHCPACK",
+    "correct": [
+      "viene inviato dal server DHCP e termina la fase di configurazione dell'interfaccia IP del client"
+    ],
+    "wrong": [
+      "viene inviato dal client DHCP e termina la fase di configurazione dell'interfaccia IP del client",
+      "Non so",
+      "viene inviato dal client DHCP e serve a identificare a quale server si chiede la configurazione dell'interfaccia IP"
+    ]
+  },
+  {
+    "question": "Nell'intestazione (header) del datagramma IP il campo MORE FRAGMENTS (MF)",
+    "correct": ["Occupa 1 bit"],
+    "wrong": [
+      "Occupa 1 byte",
+      "se vale 1 allora indica che il datagramma presente e' l'ultimo frammento di un datagramma di maggiori dimensioni che e' stato frammentato lungo il percorso in rete"
+    ]
+  },
+  {
+    "question": "Nell'intestazione (header) del datagramma IP il campo Header checksum",
+    "correct": [
+      "Deve essere ricalcolato ad ogni hop, ossia ogni volta che il datagramma attraversa un router",
+      "Verifica la correttezza della sola intestazione del pacchetto e pertanto viene calcolato sui soli byte delle PCI del datagramma"
+    ],
+    "wrong": ["Verifica la correttezza del pacchetto"]
+  },
+  {
+    "question": "Un host appartenente ad una rete connessa ad Internet tramite un NAT ha attribuito all'interfaccia di rete l'indirizzo 192.168.0.1 ed ha attiva una connessione sulla porta TCP 51321",
+    "correct": [
+      "nei datagrammi che riceve da trasmettere su Internet per la connessione il NAT deve necessariamente modificare il numero IP sorgente e, in funzione del tipo di configurazione e delle connessioni esistenti, potrebbe modificare il numero di porta sorgente"
+    ],
+    "wrong": [
+      "dal NAT verso la rete Internet vengono trasmessi datagrammi con IP sorgente 192.168.0.1",
+      "dal NAT verso la rete Internet non vengono mai trasmessi datagrammi con porta sorgente 51321"
+    ]
+  },
+  {
+    "question": "Nell'intestazione (header) del datagramma IP il campo Versione (Version)",
+    "correct": ["Occupa 4 bit"],
+    "wrong": ["E'un campo opzionale", "Occupa 1 byte"]
+  },
+  {
+    "question": "Una rete IP di classe C",
+    "correct": [
+      "Usa 3 byte per l'indirizzo della rete e 1 byte per l'indirizzo dell'Host"
+    ],
+    "wrong": [
+      "Ha un indirizzo il cui primo byte comincia con 101",
+      "Non puo' essere suddivisa in sottoreti (subnet)"
+    ]
+  },
+  {
+    "question": "Nell'intestazione (header) del datagramma IP il campo Time to live",
+    "correct": ["Limita il tempo di permanenza di un pacchetto in Internet"],
+    "wrong": [
+      "Cresce ad ogni nodo (hop) attraversato dal pacchetto",
+      "Permette di attribuire un maggior tempo di vita ai pacchetti a priorita' piu' alta"
+    ]
+  },
+  {
+    "question": "Nell'intestazione (header) del datagramma IP e' presente il campo IDENTIFICATION, che contiene un numero che identifica il datagramma. Quale delle seguenti affermazioni sono vere al riguardo.",
+    "correct": [
+      "Occupa 2 byte",
+      "Serve per consentire la eventuale frammentazione e riassemblaggio dei datagrammi"
+    ],
+    "wrong": [
+      "Serve per consentire di fornire gli acknoledgement dei datagrammi."
+    ]
+  },
+  {
+    "question": "Nell'intestazione (header) del datagramma IP",
+    "correct": [
+      "Sono presenti due indirizzi di lunghezza fissa per sorgente e destinazione"
+    ],
+    "wrong": [
+      "E' presente un campo per il numero di datagramma inviato ed uno per il numero di datagramma ricevuto",
+      "E' presente un campo per la conferma della ricezione di altri datagrammi (acknowledge)."
+    ]
+  },
+  {
+    "question": "Il messaggio ICMP di errore 'Time exceeded' puo' indicare che",
+    "correct": [
+      "il Time-to-Live di un datagramma si e' azzerato ed il datagramma viene distrutto",
+      "l'attesa dei frammenti per riassemblare un datagramma si e' protratta troppo lungo, oltre un valore limite prefissato"
+    ],
+    "wrong": [
+      "il tempo necessario ad instradare il datagramma ha superato una valore limite prefissato"
+    ]
+  },
+  {
+    "question": "Quali delle seguenti affermazioni sono corrette con riferimento all'applicazione PING:",
+    "correct": [
+      "viene implementata utilizzato il protocollo ICMP",
+      "permette di avere una stima del Round Trip Time fra de nodi della rete Internet"
+    ],
+    "wrong": [
+      "permette di misurare la distanza geografica fra due nodi della rete Internet"
+    ]
+  },
+  {
+    "question": "I messaggi del protocollo ICMP",
+    "correct": [
+      "vengono trasportati direttamente su IP senza utilizzare un protocollo di trasporto"
+    ],
+    "wrong": [
+      "viaggiano incapsulati direttamente nella trama Ethernet",
+      "vengono trasportati utilizzando una connessione TCP"
+    ]
+  },
+  {
+    "question": "Un datagramma viene inviato con TTL=1 nell'intestazione",
+    "correct": [
+      "potrebbe essere generato dall'applicazione TRACEROUTE",
+      "verra' bloccato nel primo router che incontra generando un messaggio di errore ICMP"
+    ],
+    "wrong": ["verra' instradato dal primo router che incontra"]
+  },
+  {
+    "question": "Il protocollo BGP",
+    "correct": [
+      "Garantisce l'assenza di cicli nella determinazione delle rotte",
+      "E' un protocollo di tipo Path Vector"
+    ],
+    "wrong": ["E' usato come Interior Gateway Protocol"]
+  },
+  {
+    "question": "I protocolli di routing",
+    "correct": [
+      "logicamente sono protocolli di livello applicativo che fanno parte del piano di controllo della rete",
+      "servono per creare e mantenere le tabelle di routing nei nodi"
+    ],
+    "wrong": [
+      "nella rete Internet engono impiegati solamente all'interno degli Authonomous Systems"
+    ]
+  },
+  {
+    "question": "L'algoritmo di Dijkstra",
+    "correct": [
+      "Richiede la conoscenza della topologia della rete",
+      "Permette di ricavare i percorsi di lunghezza minima fra una qualunque coppia di nodi di rete"
+    ],
+    "wrong": ["Permette di ricavare la topologia della rete"]
+  },
+  {
+    "question": "Quali di questi campi sono contenuti nei pacchetti di tipo Link State prodotti dal protocollo OSPF",
+    "correct": [
+      "Indirizzo del mittente",
+      "Età del pacchetto",
+      "Numero di sequenza"
+    ],
+    "wrong": ["Indirizzo del destinatario"]
+  },
+  {
+    "question": "I messaggi del protocollo OSPF",
+    "correct": [
+      "vengono utilizzati per l'implementazione del protocollo di HELLO che permette ai router di scoprire i propri vicini",
+      "hanno tutti un'intestazione comune, seguita da informazioni specifiche che dipendono dal tipo di pacchetto"
+    ],
+    "wrong": []
+  },
+  {
+    "question": "Quali fra i protocolli elencati in seguito sono protocolli di Routing utilizzati in Internet",
+    "correct": ["RIP"],
+    "wrong": ["TCP", "UMTS"]
+  },
+  {
+    "question": "Per l'organizzazione di Internet un Autonomous System",
+    "correct": [
+      "E'un dominio di routing che comunica con l'esterno utilizzando un Exterior Gateway Protocol quale il BGP"
+    ],
+    "wrong": [
+      "Deve contenere network IP tutte della stessa classe",
+      "E' l'unita' fondamentale in cui sono suddivisi i domini dei nomi degli host",
+      "Non so"
+    ]
+  },
+  {
+    "question": "Il protocollo OSPF",
+    "correct": ["Viene usato come Interior Gateway Protocol"],
+    "wrong": [
+      "E' un protocollo Distance Vector",
+      "Viene usato come Exterior Gateway Protocol"
+    ]
+  },
+  {
+    "question": "Il concetto di distanza nel routing in Internet",
+    "correct": [
+      "Puo' essere un qualunque valore numerico il cui significato viene convenzionalmente definito"
+    ],
+    "wrong": [
+      "deve necessariamente essere pari a 1 per ogni collegamento fra router",
+      "Non so",
+      "E' un valore numerico generato casualmente"
+    ]
+  },
+  {
+    "question": "I protocolli della famiglia Link State",
+    "correct": [
+      "Prevedono che ogni router trasmetta a tutti i nodi della rete la propria distanza dai vicini"
+    ],
+    "wrong": [
+      "Prevedono che ogni router trasmetta ai propri vicini la propria distanza da tutti i nodi della rete",
+      "Sono protocolli dinamici",
+      "Richiedono che ogni router conosca a priori la distanza dai suoi vicini"
+    ]
+  },
+  {
+    "question": "Un algoritmo di routing si dice statico quando:",
+    "correct": [
+      "Il router fa uso di una tabella di routing definita a priori in fase di configurazione"
+    ],
+    "wrong": [
+      "Associa ogni specifico ingresso ad una particolare uscita in modo fisso e non modificabile",
+      "Il router costruisce una tabella di routing sulla base delle informazioni che può ottenere misurando le proprie code di uscita",
+      "Non permette l'aggiornamento delle tabelle di routing da parte dell'operatore"
+    ]
+  },
+  {
+    "question": "Confrontando i protocolli Distance Vector (DV) con quelli Link State (LS) si puo' dire che:",
+    "correct": ["I Link State richiedono più memoria nel router"],
+    "wrong": [
+      "I Distance Vector richiedono maggior potenza di elaborazione",
+      "I Distance Vector si adattano più velocemente ai cambiamenti della rete"
+    ]
+  },
+  {
+    "question": "I protocolli della famiglia Distance Vector",
+    "correct": [
+      "Prevedono che ogni router trasmetta ai propri vicini la propria distanza da tutti i nodi della rete",
+      "Richiedono che ogni router conosca a priori la distanza dai suoi vicini"
+    ],
+    "wrong": [
+      "Prevedono che ogni router trasmetta a tutti i nodi della rete la propria distanza dai vicini",
+      "Sono protocolli statici"
+    ]
+  },
+  {
+    "question": "Quali delle seguenti descrizioni puo' essere ritenuta corretta per le funzioni delle tabel le di routing utilizzate nei nodi a commutazione di pacchetto",
+    "correct": [
+      "Associare ad ogni indirizzo di destinazione e ad ogni porta di uscita un costo convenziorialmente definito",
+      "Associare ad ogni indirizzo di destinazione una porta di uscita"
+    ],
+    "wrong": [
+      "Associare ad ogni coppia di indirizzi di sorgente e destinazione un costo convenzionalmente definito",
+      "Associare ad un identificativo di circuito virtuale una porta di ingresso ed una di uscita"
+    ]
+  },
+  {
+    "question": "In un collegamento IPSec tunnel mode",
+    "correct": [
+      "viene cifrato sia il contenuto sia l'intestazione dei datagrammi IP"
+    ],
+    "wrong": [
+      "viene cifrato solamente il contenuto dei datagrammi IP",
+      "viene cifrata solamente l'intestazione dei datagrammi IP",
+      "Non so"
+    ]
+  },
+  {
+    "question": "Quali fra questi campi sono contenuti nella trama MAC dello standard IEEE 802.3",
+    "correct": ["Starting delimiter", "Padding"],
+    "wrong": ["Access control"]
+  },
+  {
+    "question": "In una LAN IEEE 802.11 implementata con piu' Access Point operanti con WDS la trama diretta all'access point a cui e' connessa la stazione di destinazione",
+    "correct": [
+      "ha come primo indirizzo MAC quello dell'access point di destinazione"
+    ],
+    "wrong": [
+      "ha come quarto indirizzo MAC quello dell'access point di provenienza",
+      "ha come primo indirizzo MAC quello dell'access point di provenienza",
+      "Non so"
+    ]
+  },
+  {
+    "question": "In un LAN wireless del tipo IEEE 802.11 (Wi-Fi) il canale radio",
+    "correct": [
+      "viene suddiviso in due canali a diverse frequenze, uno dei quali e' utilizzato dalla stazione base (downlink) e l'altro dalle stazioni di utente (uplink)"
+    ],
+    "wrong": [
+      "viene completamente utilizzato dalla stazione base o dalle stazioni di utente in modo alternativo (TDMA)",
+      "viene utilizzato interamente da stazione base e stazioni di utente con un sistema di multiplazione a divisione di codice (CDMA)"
+    ]
+  },
+  {
+    "question": "Il progetto IEEE 802",
+    "correct": [
+      "Definisce, per le reti locali di calcolatori, gli standard relativi ai mezzi trasmissivi e agli strati 1 e 2 del modello OSI"
+    ],
+    "wrong": [
+      "Definisce tutti gli standard che sono necessari per far funzionare una rete locale di calcolatori",
+      "Ha definito una architettura originale per le reti locali, incompatibile con il modello OSI",
+      "Non so"
+    ]
+  },
+  {
+    "question": "Si dice bridge",
+    "correct": [
+      "un dispositivo per l'interconnessione di reti locali operante a livello 2"
+    ],
+    "wrong": [
+      "un dispositivo per l'interconnessione di reti locali operante a livello 1",
+      "un dispositivo per l'interconnessione di reti locali operante a livello 3",
+      "Non so"
+    ]
+  },
+  {
+    "question": "Su uno switch a 8 porte configuro due VLAN. La VLAN 1 sulle porte 1, 2, 3, 7 e la VLAN 2 sulle porte 4, 5, 6, 8. Cio' significa che",
+    "correct": [
+      "un calcolatore connesso alla porta 1 puo' comunicare con un calcolatore connesso alla porta 2 senza la necessità di ulteriori apparati",
+      "un calcolatore connesso alla porta 1 non puo' comunicare con un calcolatore connesso alla porta 4 a meno che non utilizzi ulteriori apparati"
+    ],
+    "wrong": [
+      "un calcolatore connesso alla porta 1 non puo' comunicare con un calcolatore connesso alla porta 7 a meno che non utilizzi ulteriori apparati"
+    ]
+  },
+  {
+    "question": "Stazioni Ethernet che appartengono al medesimo dominio di collisione",
+    "correct": [
+      "sono tipicamente collegate tramite un hub",
+      "se tramettono contemporaneamente danno luogo a collisione"
+    ],
+    "wrong": ["sono tipicamente collegate tramite uno switch"]
+  },
+  {
+    "question": "Con il nome di rete Ethernet si indica un atecnologie che corrisponde a:",
+    "correct": ["uno standard della IEEE"],
+    "wrong": ["Non so", "uno standard della ISO", "uno standard della ITU"]
+  },
+  {
+    "question": "Una rete 802.11 infrastrutturata",
+    "correct": [
+      "prevede che le stazioni comunichino fra loro tramite una stazione base che riceve il segnale su un canale di uplink e lo ripete su di un canale di downlink"
+    ],
+    "wrong": [
+      "prevede che le stazioni comunichino fra loro direttamente",
+      "prevede che le stazioni comunichino fra loro direttamente ed una stazione venga designata a fare da ripetitore del segnale fra le stazioni eventualmente nascoste",
+      "Non so"
+    ]
+  },
+  {
+    "question": "L'interfaccia di rete di un host ha configurato il numero IP a 192.168.20.12 ed il parametro NETMASK al valore 255.255.255.224; ne consegue che",
+    "correct": [
+      "la network IP può contenere al più 30 host (oppure 29 host ed un gateway)",
+      "l'indirizzo della rete a cui appartiene l'host e' 192.168.20.0",
+      "la network IP a cui appartiene l'host utilizza 5 bit per indirizzare i singoli host"
+    ],
+    "wrong": []
+  },
+  {
+    "question": "Il Dipartimento di un ente ottiene per l'indirizzamento IP la rete 137.204.57.128/27. Ne consegue che",
+    "correct": [
+      "la netmask dei relativi host va configurata al valore 255.255.255.224",
+      "non puo' utilizzare per l'interfaccia di un host l'indirizzo IP 137.204.57.159",
+      "potrebbe scegliere come indirizzo IP del gateway di default il numero 137.204.57.129"
+    ],
+    "wrong": []
+  },
+  {
+    "question": "Quale fra i seguenti e' un indirizzo valido per un host in una rete IP con numerazione privata",
+    "correct": ["192.168.1.1"],
+    "wrong": ["137.256.121.0", "0.1.220.198"]
+  },
+  {
+    "question": "Nella rete internet si parla fra gli altri di ISP e IXP. Quale delle seguenti affermazioni sono corrette al riguardo:",
+    "correct": ["IXP e' acronimo di Internet Exchange Point"],
+    "wrong": [
+      "ISP e IXP sono di fatto acroni mi diversi per identif icare i  medesimi soggetti.",
+      "gli ISP sono le amministrazioni statali che decidono sulle politiche da applicare alla rete Internet in una nazione"
+    ]
+  },
+  {
+    "question": "All'interfaccia di rete di un calcolatore e' attribuito un certo numero IP. Per determinare il Network ID corrispondente, secondo le regole dell'indirizzamento CLASSFULL (precedente al CIDR)",
+    "correct": [
+      "e' sufficiente interpretare correttamente i primi bit dell'indirizzo"
+    ],
+    "wrong": [
+      "e' necessario utilizzare la NETMASK",
+      "e' necessario utilizzare il DEFAULT GATEWAY"
+    ]
+  },
+  {
+    "question": "Il flooding",
+    "correct": [
+      "Viene usato come algoritmo ausiliario in alcuni protocolli di routing standardizzati da IETF",
+      "E' il modo più semplice per spedire un pacchetto a tutti gli host di una rete"
+    ],
+    "wrong": [
+      "Non riesce in generale a trovare la strada più breve da una sorgente verso una specifica destinazione"
+    ]
+  },
+  {
+    "question": "lI termini protocollo e algoritmo di instradamento",
+    "correct": [
+      "indicano rispettivamente i metodi di scambio delle informazioni sulla topologia della rete e di calcolo delle tabelle di instradamento"
+    ],
+    "wrong": [
+      "sono equivalenti",
+      "indicano rispettivamente i metodi di calcolo delle tabelle di instradamento e di scambio delle informazioni sulla topologia della rete"
+    ]
+  },
+  {
+    "question": "Il routing nella rete Internet",
+    "correct": [
+      "Viene implementato in modo dinamico e distribuito da tutti i nodi di rete, utilizzando sia scambio di informazioni sia opportuni algoritmi, secondo diverse modalità per diverse sezioni della rete"
+    ],
+    "wrong": [
+      "Viene implementato in modo statico da un nodo speciale che calcola per le tabelle di instradamento per tutti gli altri nodi della rete",
+      "Viene implementato in modo dinamico e distribuito da tutti i nodi di rete utilizzando un unico algoritmo senza scambio di informazioni",
+      "Non so"
+    ]
+  },
+  {
+    "question": "Quali di questi protocolli di Routing sono stati usati in Internet",
+    "correct": ["BGP"],
+    "wrong": ["QPSX", "Hot potato"]
+  },
+  {
+    "question": "Qualora si utilizzi in una rete un protocollo di routing di tipo flooding",
+    "correct": [
+      "tutte le possibili destinazioni vengono sicuramente raggiunte dai pacchetti"
+    ],
+    "wrong": [
+      "si ottiene il corretto instradamento dei pacchetti con l'utilizzazione minima possibile delle risorse di rete",
+      "ciascun nodo di commutazione deve assolutamente ritrasmettere un pacchetto sul collegamento da cui lo ha ricevuto"
+    ]
+  },
+  {
+    "question": "La completa configurazione dell'interfaccia IP di un host richiede di specificare",
+    "correct": ["numero IP, netmask, default gateway e server DNS"],
+    "wrong": ["numero IP e default gateway", "numero IP e server DNS"]
+  },
+  {
+    "question": "La modalità di instradamento dei datagrammi nella rete Internet",
+    "correct": ["viene fatta sulla base dell'indirizzo IP di destinazione"],
+    "wrong": [
+      "viene fatta sulla base dell'indirizzo IP di sorgente",
+      "garantisce che tutti i datagrammi di una medesima connessione seguano il medesimo percorso"
+    ]
+  },
+  {
+    "question": "Nell'elaborazione del routing table lookup",
+    "correct": [
+      "si fa uso del campo IP DESTINATION nonché del contenuto dei campi NETMASK e DESTINATION della tabella di instradamento"
+    ],
+    "wrong": [
+      "si fa uso esclusivamente delle informazioni del campo IP DESTINATION",
+      "si fa uso esclusivamente delle informazioni del campo IP SOURCE"
+    ]
+  },
+  {
+    "question": "Un datagramma con il flag DONT FRAGMENT = 1",
+    "correct": [
+      "qualora dovesse essere frammentato, viene scartato producendo un messaggio di errore"
+    ],
+    "wrong": [
+      "Non so",
+      "viene frammentato solo se necessario",
+      "verrà sempre consegnato senza essere frammentato"
+    ]
+  },
+  {
+    "question": "L'applicazione Traceroute",
+    "correct": [
+      "serve per comprendere quale sia il percorso seguito da un datagramma fra una sorgente ed una destinazione",
+      "utilizza il campo TTL del datagramma IP ed i messaggi di errore ICMP per svolgere le sue funzioni"
+    ],
+    "wrong": [
+      "permette di verificare l'efficienza dei protocolli e degli algoritmi di routing"
+    ]
+  },
+  {
+    "question": "Il comando PING:",
+    "correct": [
+      "Serve per controllare se un host IP è raggiungibile su Internet."
+    ],
+    "wrong": [
+      "Serve per riconoscere il percorso fra una rete e l'altra",
+      "Serve per misurare le dimensioni di una rete"
+    ]
+  },
+  {
+    "question": "L'indirizzo IP 190.240.20.254",
+    "correct": ["è un indirizzo di classe B"],
+    "wrong": [
+      "è un indirizzo privato di classe C",
+      "è un indirizzo pubblico di classe C",
+      "Non so"
+    ]
+  },
+  {
+    "question": "Applicare la netmask 255.255.255.224 alla rete IP 192.168.1.0 significa",
+    "correct": [
+      "suddividere la rete in 8 sottoreti",
+      "che l'indirizzo IP 192.168.1.31 è indirizzo broadcast per una subnet"
+    ],
+    "wrong": ["suddividere la rete in 3 sottoreti"]
+  },
+  {
+    "question": "Per il corretto funzionamento dell'interfaccia di rete di un host vanno configurati almeno i seguenti parametri",
+    "correct": ["numero IP e Netmask"],
+    "wrong": [
+      "numero IP e default gateway",
+      "numero IP, Netmask e default Gateway"
+    ]
+  },
+  {
+    "question": "Un host connesso in rete utilizzando il protocollo IP",
+    "correct": [
+      "può avere una o più interfacce e ad ognuna deve essere assegnato un numero IP"
+    ],
+    "wrong": [
+      "può avere più interfacce di rete assegnando a tutte il medesimo numero IP",
+      "deve avere solamente un'interfaccia di rete ed il relativo numero IP"
+    ]
+  },
+  {
+    "question": "Un router riceve un datagramma IP di 1500 byte con FRAME OFFSET = 0. Il datagramma deve essere inviato su di una rete che accetta datagrammi di lunghezza massima pari a 20 byte di header e 512 byte di dati (payload). Ne consegue che:",
+    "correct": [
+      "se il campo FRAGMENT OFFSET vale 0 frammenta il datagramma in 3 parti con FRAGMENT OFFSET rispettivamente 0, 64, 128",
+      "se il flag DON'T FRAGMENT vale 1, il router non invia il datagramma e ritorna un messaggio di errore all'host sorgente"
+    ],
+    "wrong": [
+      "se il campo FRAGMENT OFFSET vale 0 frammenta il datagramma in 2 parti con FRAGMENT OFFSET rispettivamente 0, 512"
+    ]
+  },
+  {
+    "question": "Un router riceve un datagramma IP di 1100 byte, di cui 20 di header, con FRAGMENT OFFSET = 3000 e che deve essere inviato su di una rete che accetta datagrammi di lunghezza massima pari a 400 byte",
+    "correct": [
+      "se il flag DONT FRAGMENT vale 1 non invia il datagramma e ritorna un messaggio di errore all'host sorgente"
+    ],
+    "wrong": [
+      "se il flag DONT FRAGMENT vale 0 frammenta il contenuto del datagramma in 3 parti di 380, 380 e 320 byte che verranno inviati in altrettanti datagrammi",
+      "se il flag DONT FRAGMENT vale 0 frammenta il datagramma in 3 parti con FRAGMENT OFFSET rispettivamente 3000, 3380, 3760"
+    ]
+  },
+  {
+    "question": "La tabella ARP in un host:",
+    "correct": ["contiene corrispondenze fra numeri IP e indirizzi MAC"],
+    "wrong": [
+      "Viene aggiornata dal DNS",
+      "Viene configurata all'attivazione dell'host e non può essere più modificata."
+    ]
+  },
+  {
+    "question": "Quale fra i seguenti è un indirizzo valido per un host in una rete IP con numerazione privata",
+    "correct": ["192.168.1.1"],
+    "wrong": ["0.1.220.198", "137.256.121.0"]
+  },
+  {
+    "question": "Tra due router viene configurata la rete 10.0.0.4/30. Ne consegue che",
+    "correct": ["I router avranno indirizzi 10.0.0.5 e 10.0.0.6"],
+    "wrong": [
+      "I router avranno indirizzi 10.0.0.4 e 10.0.0.5",
+      "I router avranno indirizzi 10.0.0.0 e 10.0.0.4"
+    ]
+  },
+  {
+    "question": "Il protocollo BGP viene utilizzato per gestire il routing fra gli AS. Viene detto di tipo path vector. Questo significa che",
+    "correct": [
+      "i messaggi che si scambiano i router che utilizzano questo protocollo riportano la lista delle reti di un AS e la lista degli AS che vanno attraversati per raggiungerli",
+      "i router quando vedono un'informazione di router in cui compare il loro AS la ignorano onde evitare cicli"
+    ],
+    "wrong": [
+      "i messaggi che si scambiano i router che utilizzano questo protocollo riportano la lista delle reti di un AS e la distanza da tutti gli AS noti"
+    ]
+  },
+  {
+    "question": "Quali delle seguenti affermazioni sono pertinenti se si considera un Internet Service Provider",
+    "correct": [
+      "ha un infrastruttura presente sul territorio in particolari punti detti Point of Presence o PoP",
+      "è un soggetto economico che fornisce a pagamento l'accesso alla rete Internet agli utenti finali"
+    ],
+    "wrong": [
+      "è un soggetto economico che fornisce a pagamento interconnessioni intercontinentali ad altri gestori di rete"
+    ]
+  },
+  {
+    "question": "I messaggi del protocollo OSPF",
+    "correct": [
+      "hanno tutti un'intestazione comune, seguita da informazioni specifiche che dipendono dal tipo di pacchetto",
+      "vengono utilizzati per implementare i vari protocolli che svolgono le funzioni necessarie al suo corretto funzionamento"
+    ],
+    "wrong": ["sono di due soli tipi REQUEST e RESPONSE"]
+  },
+  {
+    "question": "Nella terminologia OSPF un ABR è",
+    "correct": [
+      "un router che ha almeno un'interfaccia connessa alla propria area ed un'interfaccia connessa all'area di backbone o ad un'altra area",
+      "un router che annuncia verso il resto dell'AS gli indirizzi IP delle reti facenti parti della propria area"
+    ],
+    "wrong": ["un router che interconnette fra loro tutte le aree dell'AS"]
+  },
+  {
+    "question": "Il messaggio DHCPDISCOVER",
+    "correct": [
+      "Viene inviato da un client che deve configurare la propria interfaccia di rete in modalità broadcast sulla LAN"
+    ],
+    "wrong": [
+      "Viene inviato da un client che deve configurare la propria interfaccia di rete all'indirizzo MAC del server DHCP, come configurato dall'utente",
+      "Viene inviato in modalità broadcast da un server DHCP per scoprire se vi sono altri server DHCP attivi sulla LAN"
+    ]
+  },
+  {
+    "question": "Il protocollo ARP viene utilizzato",
+    "correct": [
+      "ogni volta che si deve inviare un datagramma ad un host o ad un gateway il cui indirizzo IP non compare nella tabella ARP"
+    ],
+    "wrong": [
+      "solamente per raggiungere il router di default",
+      "solamente quando si debbano inviare datagrammi ad host raggiungibili tramite instradamento diretto"
+    ]
+  },
+  {
+    "question": "In una LAN IEEE 802.11 implementata come BSS, la trama diretta all'access point",
+    "correct": ["ha come primo indirizzo MAC quello dell'access point"],
+    "wrong": [
+      "ha come primo indirizzo MAC quello del calcolatore a cui è destinata",
+      "ha come primo indirizzo MAC quello del calcolatore che la sta inviando"
+    ]
+  },
+  {
+    "question": "In una VPN funzionante in modalita' roadwarrior un utente della VPN",
+    "correct": [
+      "puo' collegarsi alla VPN da un qualunque punto di Internet tramite un'opportuna procedura di autenticazione (username e password tipicamente)"
+    ],
+    "wrong": [
+      "necessita di un router specifico per poter raggiungere la VPN",
+      "puo' collegarsi alla VPN solamente dall'interno della rete aziendale"
+    ]
+  },
+  {
+    "question": "Quali di questi campi sono contenuti nei pacchetti di tipo Link State prodotti dal protocollo OSPF",
+    "correct": ["Numero di sequenza", "Età del pacchetto"],
+    "wrong": ["Indirizzo del destinatario"]
+  },
+  {
+    "question": "Quali sono le principali differenze fra RIP versione 1 e versione 2:",
+    "correct": [
+      "il RIP v2 supporta l'autenticazione dei router mentre il RIP v1 no",
+      "il RIP v2 supporta il CIDR mentre il RIP v1 interpreta gli indirizzi IP solamente con la logica classfull"
+    ],
+    "wrong": ["nessuna; i due protocolli sono identici"]
+  },
+  {
+    "question": "Nell'intestazione (header) del datagramma IP il campo FRAGMENT OFFSET",
+    "correct": [
+      "Indica la distanza del frammento dall'inizio del datagramma in blocchi di 8 byte"
+    ],
+    "wrong": [
+      "Indica la lunghezza del frammento in byte",
+      "Indica la distanza del frammento dall'inizio del datagramma in parole di 32 bit"
+    ]
+  },
+  {
+    "question": "Tra due router viene configurata la rete 10.0.0.4/30. Ne consegue che",
+    "correct": ["I router avranno indirizzi 10.0.0.5 e 10.0.0.6"],
+    "wrong": [
+      "I router avranno indirizzi 10.0.0.4 e 10.0.0.5",
+      "I router avranno indirizzi 10.0.0.0 e 10.0.0.4"
+    ]
+  },
+  {
+    "question": "Le due network IP 137.204.6.0/24 e 137.204.7.0/24 potrebbero essere aggregate nella network",
+    "correct": ["137.204.6.0/23"],
+    "wrong": ["137.204.7.0/23", "137.204.6.0/25"]
+  },
+  {
+    "question": "La consegna di un datagramma con instradamento indiretto",
+    "correct": [
+      "implica il coinvolgimento di almeno un router",
+      "non avviene se i due host appartengo alla medesima network IP"
+    ],
+    "wrong": [
+      "richiede l'invio di un messaggio di ARP Request all'host di destinazione"
+    ]
+  },
+  {
+    "question": "In base all'evoluzione dei sistemi di cablaggio, una rete LAN in un edificio aziendale si puo' dire che tipicamente e' realizzata con",
+    "correct": [
+      "Cablaggio orizzontale di piano con cavo UTP e interconnessione fra piani con cavo UTP o fibra ottica."
+    ],
+    "wrong": [
+      "Cablaggio interamente in fibra ottica",
+      "Cablaggio orizzontale di piano in fibra ottica e interconnessione fra piani in cavo UTP"
+    ]
+  },
+  {
+    "question": "Il messaggio DHCP OFFER",
+    "correct": [
+      "viene inviato dal server DHCP e serve al client per identificare a quale server rivolgersi per la configurazione dell'interfaccia"
+    ],
+    "wrong": [
+      "viene inviato dal client DHCP e serve a identificare a quale server si chiede la configurazione dell'interfaccia IP",
+      "viene inviato dal server DHCP e termina la fase di configurazione dell'interfaccia IP del client"
+    ]
+  },
+  {
+    "question": "Con il termine 'Direct Forwarding' si intende",
+    "correct": [
+      "la capacita' di un host di inviare datagrammi ad altri host della sua network senza bisogno di ricorrere ad un router"
+    ],
+    "wrong": [
+      "la capacità di un host di consegnare datagrammi interagendo direttamente con un gateway",
+      "la capacità di un host di inviare datagrammi che i router tratteranno in modo prioritario"
+    ]
+  },
+  {
+    "question": "Un Ethernet switch a 4 porte 100baseT",
+    "correct": [
+      "redirige i pacchetti sulle uscite in base all'indirizzo MAC destinazione",
+      "fornisce prestazioni superiori rispetto ad un hub"
+    ],
+    "wrong": [
+      "crea un unico dominio di collisione fra tutti calcolatori ad esso collegati"
+    ]
+  },
+  {
+    "question": "Secondo gli standard IEEE 802 gli indirizzi MAC sono tali che",
+    "correct": [
+      "Sono associati in modo univoco alle schede di rete",
+      "Permettono di individuare il costruttore della scheda"
+    ],
+    "wrong": [
+      "Sono associati in modo univoco ai singoli Host della rete locale a prescindere dal numero di inerfacce di rete con cui sono equipaggiati"
+    ]
+  },
+  {
+    "question": "La dimensione dell'indirizzo MAC utilizzato nelle LAN Ethernet ha dimensione pari a",
+    "correct": ["6 byte"],
+    "wrong": ["non so", "4 byte", "8 byte"]
+  },
+  {
+    "question": "Il protocollo DHCP viene utilizzato per",
+    "correct": [
+      "configurare i parametri dell'interfaccia di rete di un calcolatore su una certa network IP"
+    ],
+    "wrong": [
+      "configurare le credenziali di accesso alla rete Wi-Fi",
+      "configurare il sistema operativo del calcolatore all'avvio"
+    ]
+  },
+  {
+    "question": "L'OSPF utilizza più di un protocollo per svolgere completamente le sue funzioni. Quali dei seguenti sono protocolli che fanno parte di OSPF",
+    "correct": ["Exchange Protocol", "Hello Protocol"],
+    "wrong": ["Distance protocol"]
+  },
+  {
+    "question": "Un flusso dati fra due istanze applicative nella rete Internet è univocamente identificata da",
+    "correct": [
+      "coppia di numero IP e porta sorgente e numero IP e porta destinazione"
+    ],
+    "wrong": [
+      "coppia di numeri di porta sorgente e destinazione",
+      "coppia di numeri IP sorgente e IP destinazione"
+    ]
+  },
+  {
+    "question": "In un tipico router di Internet la Routing Information Base (RIB) viene compilata:",
+    "correct": [
+      "dal router stesso, in base alle informazioni ottenute dall'esecuzione dei vari protocolli di router"
+    ],
+    "wrong": [
+      "dal router designato durante la fase di start up del protocollo OSPF",
+      "dal nodo di controllo centrale di tutta la rete"
+    ]
+  },
+  {
+    "question": "Confrontando i protocolli della famiglia Distance Vector (DV) con quelli della famiglia Link State (LS) si può dire che",
+    "correct": [
+      "In generale i protocolli LS garantiscono un funzionamento migliore di quelli DV"
+    ],
+    "wrong": [
+      "Le due tipologie di protocolli sono sostanzialmente equivalenti qualunque sia la topologia e la dimensione della rete considerata",
+      "In generale i protocolli DV garantiscono un funzionamento migliore di quelli LS"
+    ]
+  },
+  {
+    "question": "Il dispositivo denominato HUB",
+    "correct": [
+      "E' ormai in disuso in quanto fornisce prestazioni inferiori rispetto agli switch",
+      "Puo' essere utile se si vuole monitorare il traffico sulla LAN"
+    ],
+    "wrong": ["Separa i domini di collisione in una LAN Ethernet"]
+  },
+  {
+    "question": "Secondo la terminologia dello standard IEEE 802.11 un BSS e'",
+    "correct": [
+      "un'area dove viene implementata una rete ad hoc se si parla di Independent BSS",
+      "un'area in cui una serie di stazioni mobili possono colloquiare grazie ad un access point se si parla di Infrastructured BSS"
+    ],
+    "wrong": [
+      "un'area dove piu' access point mettono in comunicazione stazioni nascoste le une dalle altre"
+    ]
+  },
+  {
+    "question": "Un'azienda ha quattro reti LAN in quattro capannoni contigui, realizzate conquattro switch Ethernet, uno per capannone. Si vuole interconnetere le LAN realizzando un'unica rete che corrispondera' ad un'unica network IP:",
+    "correct": [
+      "E' preferibile connettere i quattro switch delle LAN tramite uno switch"
+    ],
+    "wrong": [
+      "E' necessario connettere i quattro switch delle LAN tramite un router;",
+      "Non so",
+      "E' preferibile connettere i quattro switch delle LAN ad un solo HUB"
+    ]
+  },
+  {
+    "question": "Una rete Ethernet 1000baseT",
+    "correct": [
+      "prevede una velocita' di trasmissione pari a 1 Gbit/s",
+      "prevede come mezzo trasmissivo il doppino incrociato non schermato (UTP) di categoria 5E o superiore"
+    ],
+    "wrong": ["prevede come mezzo trasmissivo la fibra ottica monomodale"]
+  },
+  {
+    "question": "Secondo la terminologia Wi-Fi un ESS",
+    "correct": [
+      "e' un sistema di piu' access point funzionanti come un'unica LAN"
+    ],
+    "wrong": [
+      "e' una particolare tipologia di stazione wireless con caratteristiche estese rispetto alle altre della LAN",
+      "Non so",
+      "e' la stazione base di una LAN infrastrutturata"
+    ]
+  }
 ]
