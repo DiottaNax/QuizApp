@@ -1,7 +1,5 @@
 package it.unibo.quiz.questions;
 
-import java.util.HashSet;
-import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -85,42 +83,4 @@ public class MultipleChoiceQuestion extends AbstractQuestion {
     public Set<String> getWrongAnswers() {
         return Set.copyOf(wrongAnswers);
     }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public int hashCode() {
-        return Objects.hash(question, wrongAnswers, correctAnswers);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public boolean equals(final Object obj) {
-        if (this == obj) {
-            return true;
-        }
-
-        if (obj == null || getClass() != obj.getClass()) {
-            return false;
-        }
-
-        final MultipleChoiceQuestion other = (MultipleChoiceQuestion) obj;
-
-        // Compare question text
-        if (!Objects.equals(question, other.question)) {
-            return false;
-        }
-
-        // Compare correct answers
-        if (!correctAnswers.equals(other.correctAnswers)) {
-            return false;
-        }
-
-        // Compare wrong answers
-        return wrongAnswers.equals(other.wrongAnswers);
-    }
-
 }
