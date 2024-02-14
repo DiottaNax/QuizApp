@@ -8,8 +8,6 @@ import java.util.Set;
  * This class represents a basic question with a single correct answer and multiple wrong answers.
  */
 public class SimpleQuestion extends AbstractQuestion {
-
-    private final String answer;
     
     /**
      * Constructs a SimpleQuestion object with the given question and answer.
@@ -23,7 +21,6 @@ public class SimpleQuestion extends AbstractQuestion {
         if (answer == null || answer.isEmpty()) {
             throw new IllegalArgumentException("Answer cannot be null or empty in a SimpleQuestion");
         }
-        this.answer = answer;
         super.correctAnswers.add(answer);
     }
 
@@ -41,7 +38,7 @@ public class SimpleQuestion extends AbstractQuestion {
      * {@inheritDoc}
      */
     @Override
-    public boolean addWrongAnswer(String answer) {
+    public boolean addWrongAnswer(final String answer) {
         return this.wrongAnswers.add(answer);
     }
 
@@ -71,29 +68,4 @@ public class SimpleQuestion extends AbstractQuestion {
         return this.question;
     }
 
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public Set<String> getAllAnswers() {
-        final var copy = new HashSet<>(wrongAnswers);
-        copy.add(answer);
-        return copy;
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public Set<String> getCorrectAnswers() {
-        return Set.of(answer);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public Set<String> getWrongAnswers() {
-        return new HashSet<>(wrongAnswers);
-    }
 }
