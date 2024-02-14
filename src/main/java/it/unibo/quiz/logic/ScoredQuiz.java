@@ -1,11 +1,13 @@
 package it.unibo.quiz.logic;
 
+import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.stream.Collectors;
-
 import it.unibo.quiz.questions.Question;
 import it.unibo.quiz.questions.QuestionProvider;
 import it.unibo.quiz.questions.QuestionWithScore;
@@ -16,26 +18,21 @@ public class ScoredQuiz implements Quiz {
     private final Map<QuestionWithScore, Set<String>> answers;
 
     public ScoredQuiz(final QuestionProvider questionProvider, final int questionNumber) {
-        final Set<QuestionWithScore> quiz = questionProvider.getQuestions().stream().limit(questionNumber)
-                .map(QuestionWithScore::new).collect(Collectors.toSet());
+        final List<Question> availableQuestions = new LinkedList<>(questionProvider.getQuestions());
+        Collections.shuffle(availableQuestions);
+        final Set<QuestionWithScore> quiz = new HashSet<>(
+                availableQuestions.stream().limit(questionNumber).map(QuestionWithScore::new).toList());
+
         this.questions = new InfiniteCircularIterator<>(quiz);
         this.answers = new HashMap<>(questionNumber);
         quiz.forEach(q -> answers.put(q, new HashSet<>()));
     }
 
     @Override
-    public boolean addAnswer(Question question, String givenAnswer) {
+    public boolean setNewAnswers(Question question, Collection<? extends String> givenAnswers) {
         if (answers.containsKey(question)) {
-            return this.answers.get(question).add(givenAnswer);
-        }
-
-        return false;
-    }
-
-    @Override
-    public boolean removeAnswer(Question question, String givenAnswer) {
-        if (answers.containsKey(question)) {
-            return this.answers.get(question).remove(givenAnswer);
+            this.answers.get(question).clear();
+            return this.answers.get(question).addAll(givenAnswers);
         }
 
         return false;
@@ -52,12 +49,26 @@ public class ScoredQuiz implements Quiz {
         return questions.previous();
     }
 
+    @Override
+    public Map<Question, Set<String>> getGivenAnswers() {
+        return Collections.unmodifiableMap(answers);
+    }
+
+    @Override
+    public Set<String> getGivenAnswers(final Question question) {
+        return this.answers.containsKey(question) ? this.answers.get(question) : Set.of();
+    }
+
+    @Override
+    public void reset() {
+        this.answers.values().forEach(Set::clear);
+    }
+
     public double computeScore() {
         return answers.entrySet().stream().mapToDouble(e -> e.getKey().computeScore(e.getValue())).sum();
     }
 
     public double getMaxScore() {
         return answers.keySet().stream().mapToDouble(QuestionWithScore::getMaxScore).sum();
-    }
-    
+    }    
 }
