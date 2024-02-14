@@ -1,8 +1,11 @@
 package it.unibo.quiz.questions;
 
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public abstract class AbstractQuestion implements Question{
     protected final String question;
@@ -17,6 +20,27 @@ public abstract class AbstractQuestion implements Question{
         this.question = question;
         this.wrongAnswers = new HashSet<>();
         this.correctAnswers = new HashSet<>();
+    }
+    
+    @Override
+    public String getQuestion() {
+        return this.question;
+    }
+
+    @Override
+    public Set<String> getCorrectAnswers() {
+        return Collections.unmodifiableSet(correctAnswers);
+    }
+
+    @Override
+    public Set<String> getWrongAnswers() {
+        return Collections.unmodifiableSet(wrongAnswers);
+    }
+
+    @Override
+    public Set<String> getAllAnswers() {
+        return Stream.concat(correctAnswers.stream(), wrongAnswers.stream())
+                .collect(Collectors.toUnmodifiableSet());
     }
     
     @Override

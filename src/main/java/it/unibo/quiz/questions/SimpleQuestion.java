@@ -1,8 +1,5 @@
 package it.unibo.quiz.questions;
 
-import java.util.HashSet;
-import java.util.Set;
-
 /**
  * A simple implementation of the {@link Question} interface.
  * This class represents a basic question with a single correct answer and multiple wrong answers.
@@ -59,13 +56,4 @@ public class SimpleQuestion extends AbstractQuestion {
     public boolean removeWrongAnswer(String answer) {
         return this.wrongAnswers.remove(answer);
     }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public String getQuestion() {
-        return this.question;
-    }
-
 }
