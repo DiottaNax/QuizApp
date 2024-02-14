@@ -38,8 +38,8 @@ public final class JsonQuestionProvider implements QuestionProvider {
                 } else {
                     newQuestion = new MultipleChoiceQuestion(question);
                     for (final String c : correctAnswers) {
-                    newQuestion.addWrongAnswer(c);
-                }
+                        newQuestion.addCorrectAnswer(c);
+                    }
                 }
 
                 for (final String w : wrongAnswers) {
