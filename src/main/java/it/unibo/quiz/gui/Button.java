@@ -7,8 +7,6 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import java.awt.BasicStroke;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 import java.awt.geom.RoundRectangle2D;
 
 /**
@@ -27,7 +25,7 @@ public class Button extends JButton {
     //By default it is a shade of cyan
     private Color pressedColor = new Color(0xCBD8EC);
     private Color textColor = Color.BLACK;
-    private int arc = 50;
+    private int arc = 30;
 
     public Button(String text) {
         super(text);
@@ -35,29 +33,7 @@ public class Button extends JButton {
         setBorderPainted(false);
         setContentAreaFilled(false);
 
-        addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseEntered(MouseEvent e) {
-                setBackground(hoverColor);
-            }
-
-            @Override
-            public void mouseExited(MouseEvent e) {
-                setBackground(backgroundColor);
-            }
-
-            @Override
-            public void mousePressed(MouseEvent e) {
-                setBackground(pressedColor);
-            }
-
-            @Override
-            public void mouseReleased(MouseEvent e) {
-                setBackground(hoverColor);
-            }
-        });
-
-        this.setFocusPainted(getFocusTraversalKeysEnabled());
+        this.setFocusPainted(false);
     }
 
     @Override
@@ -76,7 +52,6 @@ public class Button extends JButton {
 
         g2d.dispose();
         super.paintComponent(g);
-        this.setFocusPainted(false);
     }
 
     @Override
